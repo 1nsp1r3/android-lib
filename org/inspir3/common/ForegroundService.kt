@@ -15,13 +15,8 @@ abstract class ForegroundService(
     private val title: String,
     private val content: String,
 ) : Service() {
-    open fun onStart() {
-        Log.e(I3.TAG, "ForegroundService.onStart() NOT IMPLEMENTED")
-    }
-
-    open fun onStop() {
-        Log.e(I3.TAG, "ForegroundService.onClose() NOT IMPLEMENTED")
-    }
+    abstract fun onStart()
+    abstract fun onStop()
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(I3.TAG, "ForegroundService.onStartCommand()")
