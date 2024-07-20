@@ -17,7 +17,7 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 
 class GraphState(
-    var data: List<Float>,
+    var data: List<Float> = listOf(),
 ) {
     var text: String by mutableStateOf("")
 }

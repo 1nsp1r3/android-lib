@@ -4,7 +4,6 @@
  */
 package org.inspir3.common.compose
 
-import android.util.Log
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.MaterialTheme
@@ -23,17 +22,18 @@ import androidx.compose.ui.text.input.KeyboardType
 fun InputWholeNumber(
     label: String,
     value: MutableState<String>,
-    onUpdate: (Long) -> Unit,
+    onUpdate: (Int) -> Unit,
+    defaultValue: Int,
 ) {
     var text by rememberSaveable { value }
     var isError by rememberSaveable { mutableStateOf(false) }
 
-    fun validate(text: String) {
-        if (text.matches(Regex("^[0-9]+$"))) {
-            onUpdate(text.toLong())
+    fun validate() {
+        if (text.matches(Regex("^-?[0-9]+$"))) {
+            onUpdate(text.toInt())
             isError = false
         } else {
-            onUpdate(0)
+            onUpdate(defaultValue)
             isError = true
         }
     }
@@ -43,7 +43,7 @@ fun InputWholeNumber(
         value = text,
         onValueChange = {
             text = it
-            validate(text)
+            validate()
         },
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
         isError = isError,
