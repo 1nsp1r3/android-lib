@@ -2,7 +2,7 @@
  * DO NOT EDIT
  * See android-lib project
  */
- package org.inspir3.common.ble
+package org.inspir3.common.ble
 
 import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanResult
@@ -18,7 +18,7 @@ abstract class GapScanCallback : ScanCallback() {
      *        result.device.name    (Doesn't work, even with BLUETOOTH_CONNECT permission)
      */
     override fun onScanResult(callbackType: Int, result: ScanResult) {
-        Log.d(I3.TAG, "GapScanCallback.onScanResult()")
+        //Log.d(I3.TAG, "GapScanCallback.onScanResult()")
 
         //Convert Map<ParcelUuid, byte[]> to Map<String, ByteArray>
         val newMap: MutableMap<String, ByteArray> = mutableMapOf()

@@ -2,7 +2,7 @@
  * DO NOT EDIT
  * See android-lib project
  */
- package org.inspir3.common.ble
+package org.inspir3.common.ble
 
 import android.bluetooth.BluetoothManager
 import android.bluetooth.le.BluetoothLeScanner

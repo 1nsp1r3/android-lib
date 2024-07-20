@@ -2,7 +2,7 @@
  * DO NOT EDIT
  * See android-lib project
  */
- package org.inspir3.common
+package org.inspir3.common
 
 import kotlin.math.absoluteValue
 

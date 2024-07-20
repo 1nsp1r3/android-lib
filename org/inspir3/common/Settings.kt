@@ -42,7 +42,7 @@ abstract class Settings(
     }
 
     fun load() {
-        Log.d(I3.TAG, "Configuration.load()")
+        Log.d(I3.TAG, "Settings.load()")
 
         runBlocking {
             _loadSettings()
@@ -51,7 +51,7 @@ abstract class Settings(
     }
 
     fun save() {
-        Log.d(I3.TAG, "Configuration.save()")
+        Log.d(I3.TAG, "Settings.save()")
 
         runBlocking {
             _saveSettings()
