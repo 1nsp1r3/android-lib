@@ -1,12 +1,12 @@
-package org.inspir3.common
-
-import android.content.Context
-import android.content.Intent
-
 /**
  * DO NOT EDIT
  * See android-lib project
  */
+ package org.inspir3.common
+
+import android.content.Context
+import android.content.Intent
+
 class I3 {
     companion object {
         const val TAG = "Inspir3"

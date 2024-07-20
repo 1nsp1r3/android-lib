@@ -1,4 +1,8 @@
-package org.inspir3.common
+/**
+ * DO NOT EDIT
+ * See android-lib project
+ */
+ package org.inspir3.common
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -7,10 +11,6 @@ import android.content.Context
 import android.util.Log
 import androidx.core.app.NotificationCompat
 
-/**
- * DO NOT EDIT
- * See android-lib project
- */
 class NotificationHelper {
     companion object {
         private const val CHANNEL_ID = "I3"

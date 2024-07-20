@@ -1,14 +1,14 @@
-package org.inspir3.common.ble
+/**
+ * DO NOT EDIT
+ * See android-lib project
+ */
+ package org.inspir3.common.ble
 
 import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanResult
 import android.util.Log
 import org.inspir3.common.I3
 
-/**
- * DO NOT EDIT
- * See android-lib project
- */
 abstract class GapScanCallback : ScanCallback() {
     abstract fun onData(services: Map<String, ByteArray>)
 

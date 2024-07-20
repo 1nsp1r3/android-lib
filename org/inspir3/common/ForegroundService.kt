@@ -1,3 +1,7 @@
+/**
+ * DO NOT EDIT
+ * See android-lib project
+ */
 package org.inspir3.common
 
 import android.app.Service
@@ -6,10 +10,6 @@ import android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_CONNECTED_DEVICE
 import android.os.IBinder
 import android.util.Log
 
-/**
- * DO NOT EDIT
- * See android-lib project
- */
 abstract class ForegroundService(
     private val icon: Int,
     private val title: String,

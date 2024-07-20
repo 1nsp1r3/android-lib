@@ -1,3 +1,7 @@
+/**
+ * DO NOT EDIT
+ * See android-lib project
+ */
 package org.inspir3.common.file
 
 import android.os.Environment
@@ -5,10 +9,6 @@ import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
 
-/**
- * DO NOT EDIT
- * See android-lib project
- */
 class TextFile {
     private lateinit var textFile: BufferedWriter
 

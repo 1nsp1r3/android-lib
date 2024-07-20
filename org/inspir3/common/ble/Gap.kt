@@ -1,4 +1,8 @@
-package org.inspir3.common.ble
+/**
+ * DO NOT EDIT
+ * See android-lib project
+ */
+ package org.inspir3.common.ble
 
 import android.bluetooth.BluetoothManager
 import android.bluetooth.le.BluetoothLeScanner
@@ -8,10 +12,6 @@ import android.content.Context
 import android.util.Log
 import org.inspir3.common.I3
 
-/**
- * DO NOT EDIT
- * See android-lib project
- */
 class Gap(
     private val context: Context,
     private val gapScanCallback: GapScanCallback,
