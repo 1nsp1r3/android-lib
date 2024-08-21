@@ -33,9 +33,14 @@ class DateTime {
         }
 
         fun fromTsToHHmm(timestamp: Long): String {
-            val dateTime = LocalDateTime.ofEpochSecond(timestamp, 0, OffsetDateTime.now().offset)
+            val localDateTime = LocalDateTime.ofEpochSecond(timestamp, 0, OffsetDateTime.now().offset)
             val dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
-            return dateTimeFormatter.format(dateTime)
+            return dateTimeFormatter.format(localDateTime)
+        }
+
+        fun fromLocalDateTimeToHHmmss(localDateTime: LocalDateTime): String {
+            val dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss")
+            return dateTimeFormatter.format(localDateTime)
         }
     }
 }
